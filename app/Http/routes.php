@@ -28,3 +28,7 @@ Route::post('/image_upload',['as'=>'image_upload','uses'=>'HomeController@ImageU
 Route::get('/users',['as'=>'users','uses'=>'HomeController@Users']);
 
 Route::get('/user_details/{id}',['as'=>'user_details','uses'=>'HomeController@UserDetails']);
+
+
+Route::get('/student_view',['as'=>'student_view','uses'=>'StudentController@StudentView']);
+Route::get('/student_add',['as'=>'student_add','uses'=>'StudentController@StudentAdd']);
